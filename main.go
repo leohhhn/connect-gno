@@ -63,8 +63,8 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
+	fmt.Println(res)
 
-	address := accountRes.GetAddress().String()
 	// Evaluate expression
 	qevalRes, _, _ := client.QEval("gno.land/r/demo/wugnot", "BalanceOf(\"g1jg8mtutu9khhfwc4nxmuhcpftf0pajdhfvsqf5\")")
 	fmt.Println(qevalRes)
